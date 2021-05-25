@@ -1,0 +1,177 @@
+
+
+@media screen and (max-width:800px){
+	#input0{
+		width:98%
+	}
+}
+@media screen and (min-width:800px){
+
+
+	#iTextMain > *:not(.clear),#Cond > *:not(.clear){
+		float:left
+	}
+}
+
+
+#input0Tool select{
+	vertical-align: middle
+}
+
+.Symboli .td:not(:hover),.Symboli td:not(:hover){
+	color:cadetblue
+}
+
+.Fn .td{
+	font-size:12px
+}
+
+
+#TextLaTeXBox{
+	position: relative;
+    z-index: 30000;
+}
+
+.TextLaTeXBox{
+	float:left
+}
+
+
+.sbsTbl .td{
+	float:left;
+	margin:2px;
+	overflow:hidden;
+}
+
+
+.sbsTbl td, #iTextMain input, .inputTip{
+	font: normal 1.3rem KaTeX_Main,Times New Roman,serif;
+}
+.sbsTbl td[title^="\\n"]{
+	font: normal 1.3rem serif;
+}
+
+.Symboli td{
+	padding: 10px
+}
+.Symboli_ {
+    background-color: palegoldenrod;
+}
+
+
+.sbsTbl .td:hover, .sbsTbl td:hover{
+    background: blue;
+    color: white;
+}
+
+.sbsiTbl .td:not(.seled),.sbsiTbl td:not(.seled){
+	border-color:transparent
+}
+
+.iTextLaTeXon input{
+	border:0
+}
+.sbsTblPg{
+	width:100%
+}
+.sbsTbl .td:empty{
+	display:none
+}
+.sbsTbl .td, .sbsTbl td:not(:empty){
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	cursor: pointer;
+	padding:10px;
+	position: relative;
+}
+
+.sbsTbl .td[title]:not(.Fns), .sbsTbl td[title]{
+	padding:1.2rem;
+}
+
+.sbsTbl .td:not(:empty):active,.sbsTbl td:not(:empty):active{
+	border-color:gray
+}
+
+
+.sbsTbl .td:not(:empty){
+	min-width:25px;
+}
+#sbs td:not(:empty){
+	min-width:30px;
+	font-size: 1.5rem;
+}
+.TextLaTeXBox td:not(:empty):after,.TextLaTeXBox .td:not(:empty):not(.Fns):after {
+    content: attr(title);
+    display: block;
+    font-size: .8rem;
+	color: gray;
+	position: absolute;
+    left: 2px;
+	right: 2px;
+	overflow: hidden;
+    max-height: 1.2rem;
+}
+
+.sbsTbl:not(.sbsiTbl) tr:nth-child(odd), .Symboli:not(.Symboli_){
+	background: rgba(162,195,97,.1);
+}
+
+.seled:not(div):not(.subhead):not(.subtabhead):not(textarea){
+	background: lightyellow;
+	color: limegreen;
+	border-radius: 100%;
+}
+
+.snippetName{
+	border-bottom:solid 1px gainsboro;
+	word-break: break-all;
+}
+
+#input0,#input1{
+	min-height:70px;
+}
+#input0Preview,#HTMLEditor{
+	min-height:50px;
+}
+
+#input0Preview, #iTextPreview,#HTMLEditor{
+	background: rgba(162,195,97,.1);
+}
+[name=tool]:checked + span:not(:hover){
+	background: rgba(255,255,0,.5);
+	color:rgba(1,1,1,.2)
+}
+textarea.seled,.snippet.seled{
+	border:solid 1px yellow;
+	background:rgba(50, 205, 50, 0.2);
+}
+
+.sbsiTbl tr.Symboli:not(.Symboli_):after {
+    content: attr(data-ii);
+    text-shadow: 1px 1px 1px #666;
+	color: white;
+}
+
+.snippet:before {
+	content: counter(cnt) ". ";
+    counter-increment: cnt;
+    text-shadow: 1px 1px 1px #666;
+	color: white;
+}
+.snippet:not(.seled):after {
+	content: attr(data-type);
+    text-shadow: 1px 1px 1px #666;
+	color: white;
+}
+#snippets{
+	counter-reset:cnt 0;
+	min-height: 4rem;
+}
+
+.bgGrid{
+	background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+    background-size: 20px 20px;
+    background-position: center;
+}
