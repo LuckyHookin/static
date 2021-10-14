@@ -1,0 +1,1 @@
+import{a,_ as s}from"./index.a67d8a95.js";import{o as t,b as n,m as o,e,A as i,t as r,q as d,F as l}from"./vendor.4bd9a026.js";const u={class:"container relative mx-auto min-h-screen pt-16"},c={setup(c){const m=a();function p(){m.id++}return(a,c)=>(t(),n(l,null,[o(s),e("div",u,[e("div",null,[i(r(d(m).id)+" ",1),e("button",{onClick:p},"++")])])],64))}};export{c as default};
